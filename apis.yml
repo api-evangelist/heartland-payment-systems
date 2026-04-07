@@ -1,7 +1,12 @@
 aid: heartland-payment-systems
-url: https://raw.githubusercontent.com/api-evangelist/heartland-payment-systems/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/heartland-payment-systems/refs/heads/main/apis.yml
 modified: '2026-03-24'
 apis: []
 common:
   - type: Website
     url: https://www.heartland-payment-systems.com
+description: >-
+  Heartland Payment Systems is a payment processing company offering payroll, customer
+  engagement, point-of-sale, and other business solutions to merchants across the
+  United States.

@@ -4,7 +4,8 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: Heartland Payment Systems
 providerId: heartland-payment-systems
 created: '2026-05-04'
-modified: '2026-05-04'
+modified: '2026-05-05'
+reconciled: false
 tags:
   - Bill Pay
   - Card Present
@@ -15,98 +16,41 @@ tags:
   - Payroll
   - Point of Sale
   - Rate Limiting
-  - Quotas
-  - Throttling
-description: Machine-readable rate limit definitions for the Heartland Payment Systems API surface. Captures
-  per-tier quotas, burst behavior, response signaling, and recovery semantics. Defaults are scaffold values
-  to be replaced with published provider limits.
-headers:
-  limit: X-RateLimit-Limit
-  remaining: X-RateLimit-Remaining
-  reset: X-RateLimit-Reset
-  retryAfter: Retry-After
-  policy: RateLimit-Policy
-responseCodes:
-  throttled: 429
-  quotaExceeded: 429
-  serviceUnavailable: 503
+notes: Heartland / Global Payments does not publish numeric rate limits for the Portico Gateway, Card
+  Present, Bill Pay, Gift / Loyalty, or Payroll APIs on its public developer portal. Production traffic
+  capacity is provisioned per merchant and is not publicly documented. Consumers must consult the executed
+  merchant agreement and the developer portal API reference for any documented throttling behavior.
+sources:
+  - https://developer.globalpayments.com/
+  - https://www.heartland.us/payments
+description: No public numeric rate limits are documented. Capacity is provisioned per merchant under the
+  executed processing agreement.
 limits:
-  - tier: free
-    name: Free Tier Default
-    scope: api-key
-    metric: requests_per_minute
-    limit: 10
-    burst: 20
-    timeFrame: minute
+  - tier: merchant
+    name: Per-Merchant Capacity
+    scope: merchant
+    metric: varies
+    limit: 'see merchant agreement / developer portal API reference'
     applies:
-      - Heartland Portico Gateway API
-      - Heartland Card Present API
       - Heartland Bill Pay API
+      - Heartland Card Present API
       - Heartland Gift and Loyalty API
       - Heartland Payroll API
-  - tier: free
-    name: Free Tier Monthly Quota
-    scope: api-key
-    metric: requests_per_month
-    limit: 1000
-    timeFrame: month
-    applies:
       - Heartland Portico Gateway API
-      - Heartland Card Present API
-      - Heartland Bill Pay API
-      - Heartland Gift and Loyalty API
-      - Heartland Payroll API
-  - tier: professional
-    name: Professional Tier Default
-    scope: api-key
-    metric: requests_per_minute
-    limit: 100
-    burst: 200
-    timeFrame: minute
-    applies:
-      - Heartland Portico Gateway API
-      - Heartland Card Present API
-      - Heartland Bill Pay API
-      - Heartland Gift and Loyalty API
-      - Heartland Payroll API
-  - tier: professional
-    name: Professional Tier Monthly Quota
-    scope: api-key
-    metric: requests_per_month
-    limit: 100000
-    timeFrame: month
-    applies:
-      - Heartland Portico Gateway API
-      - Heartland Card Present API
-      - Heartland Bill Pay API
-      - Heartland Gift and Loyalty API
-      - Heartland Payroll API
-  - tier: enterprise
-    name: Enterprise Negotiated Limit
-    scope: contract
-    metric: requests_per_minute
-    limit: 1000
-    burst: 5000
-    timeFrame: minute
-    applies:
-      - Heartland Portico Gateway API
-      - Heartland Card Present API
-      - Heartland Bill Pay API
-      - Heartland Gift and Loyalty API
-      - Heartland Payroll API
+    notes: Heartland does not publish numeric per-API throttle ceilings. Card-network and processor-side
+      controls (issuer, scheme, fraud) apply in addition to any platform throttle.
 policies:
   - name: Backoff Strategy
-    description: Clients should implement exponential backoff with jitter, honoring the Retry-After header
-      when present.
-  - name: Burst Handling
-    description: Short bursts above the steady-state limit are tolerated up to the documented burst ceiling
-      before throttling engages.
-  - name: Quota Reset
-    description: Monthly quotas reset at the start of each calendar month in UTC. Per-minute and per-second
-      windows reset on a sliding-window basis.
-  - name: Fair Use
-    description: Even on uncapped enterprise tiers, sustained usage that materially impacts shared infrastructure
-      may be subject to fair-use throttling.
+    description: Implement exponential backoff with jitter on 5xx and any 429-class responses; honor
+      Retry-After when present.
+  - name: Idempotency
+    description: Use the Portico Gateway's documented idempotency mechanisms (e.g. ClientTransactionId)
+      to avoid duplicate authorizations on retry.
+  - name: PCI Scope
+    description: Limit retries on PCI-scoped endpoints to avoid expanding cardholder-data exposure.
+  - name: Capacity Uplift
+    description: Higher sustained throughput is provisioned by the Heartland implementation team during
+      merchant onboarding.
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

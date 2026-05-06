@@ -8,40 +8,66 @@ alignedWith:
   dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
 provider: Heartland Payment Systems
 providerId: heartland-payment-systems
-publisherName: Heartland Payment Systems
-serviceCategory: API
+publisherName: Global Payments Inc. (Heartland brand)
+serviceCategory: Payments
 created: '2026-05-04'
-modified: '2026-05-04'
+modified: '2026-05-05'
+reconciled: false
 tags:
-  - Bill Pay
-  - Card Present
-  - Card Not Present
-  - Ecommerce
-  - Payment Processing
   - Payments
+  - Payment Processing
+  - Card Present
+  - Ecommerce
   - Payroll
-  - Point of Sale
   - FinOps
-  - Cost Management
   - FOCUS
-description: FinOps framework definition for the Heartland Payment Systems API surface. Provides a FOCUS-aligned
-  mapping for cost allocation, usage measurement, and unit-economics reporting across the provider's APIs.
+notes: Heartland Payment Systems sells merchant processing on a quote basis - no public price book is
+  available. The FinOps shape is take-rate (per-transaction percentage + flat) plus optional subscription
+  add-ons (gift/loyalty, payroll), but the actual rates are bilateral. Meters below are the right shape;
+  the price column is intentionally left as 'see merchant agreement'.
+description: 'FOCUS-aligned FinOps stub for Heartland Payment Systems. Take-rate + per-transaction billing
+  through Global Payments; rates negotiated per merchant agreement.'
+sources:
+  - https://www.heartland.us/payments
+  - https://developer.globalpayments.com/
+billingModel:
+  pricingCategory: Take Rate + Flat (per merchant agreement)
+  billingFrequency: Monthly
+  billingCurrency: USD
+  chargeCategories:
+    - Usage
+    - Purchase
+    - Tax
+    - Adjustment
+    - Refund
+  chargeFrequency: Recurring
+focusColumns:
+  ServiceName: Heartland Payment Systems
+  ServiceCategory: Payments
+  ProviderName: Heartland Payment Systems
+  PublisherName: Global Payments Inc.
+  InvoiceIssuerName: Global Payments Inc.
+  PricingCategory: Take Rate
+  PricingUnit: transaction
+  BillingCurrency: USD
+  ChargeCategory: Usage
 principles:
   - name: Visibility
-    description: Make API consumption costs visible to engineering, product, and finance teams in near
-      real-time.
+    description: Use Heartland's merchant portal and the Portico Gateway reporting endpoints to track
+      authorizations, captures, refunds, and chargebacks; reconcile against the monthly merchant statement.
   - name: Allocation
-    description: Tag every chargeable API call with the consuming team, environment, application, and
-      feature so cost can be allocated.
+    description: Tag transactions with merchant location, channel (card-present vs e-commerce), and
+      product line via ClientTransactionId / TagData fields so revenue and fee can be attributed downstream.
   - name: Optimization
-    description: Continuously evaluate request patterns, caching, batching, and tier selection to reduce
-      cost per useful unit of work.
+    description: Cost levers are merchant-agreement-level - renegotiate at volume tiers, route appropriate
+      traffic to lower-cost interchange categories (e.g. Level II/III data on commercial cards), and
+      minimize chargebacks through 3DS / fraud screening to avoid fee surcharges.
   - name: Accountability
-    description: Establish budget owners and chargeback or showback flows for each consuming team.
+    description: Assign a treasury / finance owner who reconciles statements monthly, owns chargeback
+      response, and renegotiates rates at thresholds defined in the merchant agreement.
 domains:
   - name: Understand Usage and Cost
     capabilities:
-      - Data Ingestion
       - Allocation
       - Reporting and Analytics
       - Anomaly Management
@@ -50,120 +76,106 @@ domains:
       - Planning and Estimating
       - Forecasting
       - Budgeting
-      - Benchmarking
       - Unit Economics
   - name: Optimize Usage and Cost
     capabilities:
-      - Architecting for Cloud
       - Rate Optimization
       - Workload Optimization
-      - Cloud Sustainability
       - Licensing and SaaS
   - name: Manage the FinOps Practice
     capabilities:
-      - FinOps Practice Operations
-      - FinOps Education and Enablement
       - Invoicing and Chargeback
       - Onboarding Workloads
       - Intersecting Disciplines
-billingModel:
-  pricingCategory: Usage-Based
-  billingFrequency: Monthly
-  billingCurrency: USD
-  chargeCategories:
-    - Usage
-    - Purchase
-    - Tax
-    - Credit
-    - Adjustment
-  chargeFrequency: Recurring
-focusColumns:
-  ServiceName: Heartland Payment Systems
-  ServiceCategory: Developer Tools / API
-  ProviderName: Heartland Payment Systems
-  PublisherName: Heartland Payment Systems
-  InvoiceIssuerName: Heartland Payment Systems
-  PricingCategory: Usage-Based
-  PricingUnit: request
-  BillingCurrency: USD
-  ChargeCategory: Usage
 meters:
-  - name: api_requests
-    description: Count of billable API requests
-    unit: request
+  - name: card_transactions
+    description: Authorized card transactions processed through Heartland
+    unit: transaction
     aggregation: sum
     dimensions:
-      - api
-      - endpoint
-      - tier
-      - region
-      - consumer
-  - name: data_egress
-    description: Bytes returned over the network in API responses
-    unit: GB
+      - merchant_id
+      - mid
+      - card_brand
+      - channel
+      - country
+  - name: transaction_volume
+    description: Gross dollar volume of processed transactions
+    unit: USD
     aggregation: sum
     dimensions:
-      - api
-      - region
-      - consumer
-  - name: compute_seconds
-    description: Server-side compute consumed by the request, where applicable
-    unit: second
+      - merchant_id
+      - card_brand
+      - channel
+  - name: chargebacks
+    description: Chargeback events; surcharge applies per the merchant agreement
+    unit: event
     aggregation: sum
     dimensions:
-      - api
-      - endpoint
-      - tier
+      - merchant_id
+      - reason_code
+  - name: refunds
+    description: Refund events
+    unit: event
+    aggregation: sum
+    dimensions:
+      - merchant_id
+  - name: gift_loyalty_activity
+    description: Gift / loyalty card activity (issuance, reload, redemption)
+    unit: event
+    aggregation: sum
+    dimensions:
+      - merchant_id
+      - program
+  - name: payroll_runs
+    description: Heartland payroll run events
+    unit: run
+    aggregation: sum
+    dimensions:
+      - merchant_id
 apis:
   - name: Heartland Portico Gateway API
     baseURL: ''
     tags:
-      - Card Not Present
-      - Ecommerce
       - Payments
-      - Tokenization
+      - Card Present
+      - Card Not Present
     serviceName: Heartland Portico Gateway API
-    serviceCategory: API
+    serviceCategory: Payments
   - name: Heartland Card Present API
     baseURL: ''
     tags:
+      - Payments
       - Card Present
-      - EMV
-      - In-Person Payments
-      - Terminals
+      - Point of Sale
     serviceName: Heartland Card Present API
-    serviceCategory: API
+    serviceCategory: Payments
   - name: Heartland Bill Pay API
     baseURL: ''
     tags:
       - Bill Pay
-      - Invoicing
-      - Recurring Payments
+      - Payments
     serviceName: Heartland Bill Pay API
-    serviceCategory: API
+    serviceCategory: Payments
   - name: Heartland Gift and Loyalty API
     baseURL: ''
     tags:
-      - Gift Cards
+      - Gift
       - Loyalty
-      - Stored Value
     serviceName: Heartland Gift and Loyalty API
-    serviceCategory: API
+    serviceCategory: Payments
   - name: Heartland Payroll API
     baseURL: ''
     tags:
-      - HR
       - Payroll
-      - Tax
     serviceName: Heartland Payroll API
-    serviceCategory: API
+    serviceCategory: Payments
 unitEconomics:
-  - name: Cost per 1K Requests
-    metric: billed_cost / (api_requests / 1000)
-    target: TBD
-  - name: Cost per Active Consumer
-    metric: billed_cost / active_consumers
-    target: TBD
+  - name: Effective Take Rate
+    metric: total_processing_fees / transaction_volume
+    target: per merchant agreement
+  - name: Cost per Transaction
+    metric: total_processing_fees / card_transactions
+    target: per merchant agreement
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

@@ -99,6 +99,10 @@ apis:
       - type: Documentation
         url: https://developer.globalpayments.com/heartland/getting-started/overview
 common:
+  - type: GitHubOrganization
+    url: https://github.com/hps
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/heartland-payment-systems
   - type: Website
     url: https://www.heartland.us
   - type: ParentCompany

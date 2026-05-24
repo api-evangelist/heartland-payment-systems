@@ -117,6 +117,8 @@ common:
     url: mailto:onlinepayments@heartland.us
   - type: Contact
     url: mailto:integratormanagement@e-hps.com
+  - type: LLMsTxt
+    url: https://developer.globalpayments.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

@@ -100,6 +100,8 @@ apis:
       - type: Documentation
         url: https://developer.globalpayments.com/heartland/getting-started/overview
 common:
+  - type: DomainSecurity
+    url: security/heartland-payment-systems-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/hps
   - type: LinkedIn

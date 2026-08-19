@@ -1,0 +1,176 @@
+# Global Payments Documentation
+
+Documentation for Global Payments integration.
+
+## Getting Started
+How the portal works
+
+- [Getting Started](https://developer.globalpayments.com/docs/getting-started/overview.md): Your integration journey begins here!
+- [Register / Create an App](https://developer.globalpayments.com/docs/getting-started/register.md): Set up a free account and learn how to get your test credentials
+- [Create an Access Token](https://developer.globalpayments.com/docs/getting-started/generate-token.md): Learn how to generate a single-use key to start making API requests
+- [Build Your Integration](https://developer.globalpayments.com/docs/getting-started/your-integration.md): Start your payments journey using our portal’s resources
+- [Postman Collection](https://developer.globalpayments.com/docs/getting-started/postman-collection.md): Use Postman for easier integration with our API
+- [Testing](https://developer.globalpayments.com/docs/getting-started/testing.md): Ready your Integration to go live by running these scenarios.
+- [Going Live](https://developer.globalpayments.com/docs/getting-started/going-to-production.md): Ready to go live? Contact us to validate your integration
+- [Introduction](https://developer.globalpayments.com/docs/getting-started/new-to-payments/introduction.md): Learn how the card payment process works and how we fit into it
+- [Fintech Explained](https://developer.globalpayments.com/docs/getting-started/new-to-payments/fintech-education-module-1.md): An introduction to modern financial technology for builders and business owners
+- [Payments Explained](https://developer.globalpayments.com/docs/getting-started/new-to-payments/fintech-education-module-2.md): A step-by-step guide to the full lifecycle of a card transaction – from the tap or swipe to settlement
+- [Key Players in Payments](https://developer.globalpayments.com/docs/getting-started/new-to-payments/fintech-education-module-3.md): A deep dive into the key organizations, their functions, and how they fit into your product strategy
+- [Glossary](https://developer.globalpayments.com/docs/getting-started/new-to-payments/glossary.md): Get definitions for key terms in the payments industry
+
+## Integration Options
+Online, In-Store via Plugin, SDK or API
+
+- [Integration Options](https://developer.globalpayments.com/docs/integration-options/overview.md): Find an integration solution that works for you
+- [Plugins](https://developer.globalpayments.com/docs/integration-options/plugins.md): No Code: Integrate a feature-rich shopping cart or platform extension
+- [Adobe Commerce](https://developer.globalpayments.com/docs/integration-options/plugins/adobe.md): No Code: Customize your online store quickly and easily
+- [OpenCart](https://developer.globalpayments.com/docs/integration-options/plugins/opencart.md): No code: Customize your online store quickly and easily
+- [PrestaShop](https://developer.globalpayments.com/docs/integration-options/plugins/prestashop.md): No Code: Customize your online store quickly and easily
+- [WooCommerce](https://developer.globalpayments.com/docs/integration-options/plugins/woocommerce.md): No Code: Customize your online store quickly and easily
+- [Overview](https://developer.globalpayments.com/docs/integration-options/sdk/overview.md): Low Code: Use an SDK or client-side library to get to market faster
+- [Java](https://developer.globalpayments.com/docs/integration-options/sdk/java.md): Integrate our SDK Java into your project
+- [PHP](https://developer.globalpayments.com/docs/integration-options/sdk/php.md): Integrate our SDK PHP into your project
+- [.NET](https://developer.globalpayments.com/docs/integration-options/sdk/net.md): Integrate our SDK .NET into your project
+- [JavaScript](https://developer.globalpayments.com/docs/integration-options/sdk/javascript.md): Integrate using our JavaScript Library
+- [Android](https://developer.globalpayments.com/docs/integration-options/sdk/android.md): Integrate using our Android library
+- [iOS](https://developer.globalpayments.com/docs/integration-options/sdk/ios.md): Integrate using our iOS Library
+- [Overview](https://developer.globalpayments.com/docs/integration-options/sdk/sdk-reference/overview.md): Useful resources for an SDK integration
+- [Token Management](https://developer.globalpayments.com/docs/integration-options/sdk/sdk-reference/token-management.md): Track the history of your token updates
+- [Model Context Protocol (MCP)](https://developer.globalpayments.com/docs/integration-options/mcp.md): Let your AI agents interact with the Global Payments API by using our MCP server
+- [API](https://developer.globalpayments.com/docs/integration-options/api.md): Connect into numerous regions, channels, and payment methods worldwide with one integration
+
+## Payments
+Online, In-Store, Tokenization, Recurring, Payment Methods
+
+- [Payments](https://developer.globalpayments.com/docs/payments/overview.md): Explore ways to take and manage payments for your customers
+- [Overview](https://developer.globalpayments.com/docs/payments/online/overview.md): Explore our solutions for online transactions
+- [Plugins](https://developer.globalpayments.com/docs/payments/online/plugins.md): No Code: Integrate a feature-rich shopping cart or platform extension
+- [Overview](https://developer.globalpayments.com/docs/payments/online/pay-by-link-overview.md): Allow customers to pay with a unique payment link.
+- [Guide](https://developer.globalpayments.com/docs/payments/online/pay-by-link-guide.md): Learn how to create a unique payment link.
+- [Overview](https://developer.globalpayments.com/docs/payments/online/hosted-payment-page-overview.md): Quickly set up a secure checkout page.
+- [Guide](https://developer.globalpayments.com/docs/payments/online/hosted-payment-page-guide.md): Learn how to integrate our secure checkout page.
+- [Customization](https://developer.globalpayments.com/docs/payments/online/hosted-payment-page-customization.md): Use our templates to find a design that fits best for your experience
+- [Overview](https://developer.globalpayments.com/docs/payments/online/hosted-fields-overview.md): Use tokenization for maximum customization of your payment page.
+- [Guide](https://developer.globalpayments.com/docs/payments/online/hosted-fields-guide.md): Learn how to use tokens to customize your payment form.
+- [Overview](https://developer.globalpayments.com/docs/payments/online/drop-in-ui-overview.md): Use prebuilt UI components to enhance your payment page
+- [Guide](https://developer.globalpayments.com/docs/payments/online/drop-in-ui-guide.md): Learn how to integrate our prebuilt payment form
+- [Direct API & SDK](https://developer.globalpayments.com/docs/payments/online/api-guide.md): Learn how to take your first payment using our API or an SDK
+- [Overview](https://developer.globalpayments.com/docs/payments/in-store/overview.md): Explore our solutions for card-present transactions
+- [Standalone Terminals](https://developer.globalpayments.com/docs/payments/in-store/standalone.md): Use a standalone with our built-in payment app for a no-code integration
+- [Cloud Integration](https://developer.globalpayments.com/docs/payments/in-store/cloud.md): Learn how to send commands directly to a device via our cloud service
+- [Semi-Integration](https://developer.globalpayments.com/docs/payments/in-store/semi-integration.md): Code to our payment app for terminals to save time
+- [Full Integration](https://developer.globalpayments.com/docs/payments/in-store/full-integration.md): Learn how to complete a sale in your application
+- [Recurring Payments](https://developer.globalpayments.com/docs/payments/recurring/overview.md): Make subsequent payments easier for your customers
+- [Guide](https://developer.globalpayments.com/docs/payments/recurring/recurring-payments-guide.md): Learn how to perform a recurring transaction
+- [Credentials on File](https://developer.globalpayments.com/docs/payments/recurring/credentials-on-file.md): Learn how to flag COF transactions to adhere to card brand mandates
+- [Tokenization](https://developer.globalpayments.com/docs/payments/tokenization/overview.md): Store card and customer data for secure payments
+- [Guide](https://developer.globalpayments.com/docs/payments/tokenization/card-storage-guide.md): Tokenize card details to charge customers later
+- [Payment Method Alias](https://developer.globalpayments.com/docs/payments/tokenization/payment-method-alias-guide.md): Unify customer transactions from multiple channels
+- [Overview](https://developer.globalpayments.com/docs/payments/tokenization/network-tokenization-overview.md): Allow card brands to manage customers’ payment credentials
+- [Guide](https://developer.globalpayments.com/docs/payments/tokenization/network-tokenization-guide.md): Learn how to create a network token for card processing
+- [Overview](https://developer.globalpayments.com/docs/payments/tokenization/payers-overview.md): Store customer details for future transactions
+- [Guide](https://developer.globalpayments.com/docs/payments/tokenization/payers-guide.md): Learn how to store customer details for future use
+- [Payment Methods](https://developer.globalpayments.com/docs/payments/payment-methods/overview.md): Explore better and more convenient ways to let your customers pay
+- [Overview](https://developer.globalpayments.com/docs/payments/payment-methods/digital-wallets/overview.md): Let customers pay securely with just a scan, tap, or click
+- [Apple Pay](https://developer.globalpayments.com/docs/payments/payment-methods/digital-wallets/apple-pay.md): For merchants using Global Payments API
+- [Google Pay](https://developer.globalpayments.com/docs/payments/payment-methods/digital-wallets/google-pay.md): Let customers pay with their saved cards 
+- [Decrypted Digital Wallets](https://developer.globalpayments.com/docs/payments/payment-methods/digital-wallets/decrypted-wallets.md): Set up payload decryption to preview card data
+- [Overview](https://developer.globalpayments.com/docs/payments/payment-methods/click-to-pay.md): Merchant Integration Overview
+- [Guide](https://developer.globalpayments.com/docs/payments/payment-methods/click-to-pay-guide.md): Enable Click to Pay
+- [Overview](https://developer.globalpayments.com/docs/payments/payment-methods/buy-now-pay-later-overview.md): Allow customers to repay the cost of their purchase over time
+- [Guide](https://developer.globalpayments.com/docs/payments/payment-methods/buy-now-pay-later-guide.md): Learn how to let customers repay the cost of their purchase over time
+- [Guide](https://developer.globalpayments.com/docs/payments/payment-methods/alternative-payment-methods-guide.md): Learn how to integrate and display other payment methods
+- [Overview](https://developer.globalpayments.com/docs/payments/payment-methods/qr-codes-overview.md): Let customers use these payment methods via QR code
+- [Guide](https://developer.globalpayments.com/docs/payments/payment-methods/qr-codes-guide.md): Learn how to add these payment methods via QR code
+- [Overview](https://developer.globalpayments.com/docs/payments/payment-methods/open-banking-overview.md): Allow customers to pay using their bank account
+- [Guide](https://developer.globalpayments.com/docs/payments/payment-methods/open-banking-guide.md): Learn how to let customers pay using their bank account
+- [Overview](https://developer.globalpayments.com/docs/payments/payment-methods/paypal-overview.md): Allow customers to pay using this popular payment method
+- [Guide](https://developer.globalpayments.com/docs/payments/payment-methods/paypal-guide.md): Learn how to add PayPal as a payment method for your integration
+- [Guide](https://developer.globalpayments.com/docs/payments/payment-methods/dynamic-currency-conversion-guide.md): Learn how to let international customers pay in their home currency
+- [Overview - Czechia](https://developer.globalpayments.com/docs/payments/payment-methods/bank-payment/cz-overview.md): Learn about our solution for letting customers in Czechia pay using their bank of choice
+- [Guide - Czechia](https://developer.globalpayments.com/docs/payments/payment-methods/bank-payment/cz-guide.md): Learn how to let customers in Czechia pay using their bank of choice
+- [Overview - Slovakia](https://developer.globalpayments.com/docs/payments/payment-methods/bank-payment/sk-overview.md): Learn about our solution for letting customers in Slovakia pay using their bank of choice
+- [Guide - Slovakia](https://developer.globalpayments.com/docs/payments/payment-methods/bank-payment/sk-guide.md): Learn how to let customers in Slovakia pay using their bank of choice
+- [Overview](https://developer.globalpayments.com/docs/payments/payment-methods/loyalty/overview.md): Offer a loyalty scheme to your customers
+- [Guide](https://developer.globalpayments.com/docs/payments/payment-methods/loyalty/step-by-step.md): Learn how to offer loyalty points to your customers
+- [Overview](https://developer.globalpayments.com/docs/payments/payment-methods/installments/overview.md): Offer Installment plans to customers
+- [Guide](https://developer.globalpayments.com/docs/payments/payment-methods/installments/step-by-step.md): Learn How to Offer Installments
+- [Manage Payments](https://developer.globalpayments.com/docs/payments/manage-payments/overview.md): Explore all of the payment actions that are available for our API
+- [Adjust](https://developer.globalpayments.com/docs/payments/manage-payments/adjust-guide.md): Learn how to adjust a bill to add a tip
+- [Batches](https://developer.globalpayments.com/docs/payments/manage-payments/batches-guide.md): Learn how to close batches and later review them
+- [Capture](https://developer.globalpayments.com/docs/payments/manage-payments/capture-guide.md): Learn how to perform a pre-authorization for a delayed capture
+- [Increment](https://developer.globalpayments.com/docs/payments/manage-payments/increment-guide.md): Learn how to add supplemental charges to an existing transaction
+- [Reauth](https://developer.globalpayments.com/docs/payments/manage-payments/reauth-guide.md): Learn how to get a new authcode for a stale transaction
+- [Refund](https://developer.globalpayments.com/docs/payments/manage-payments/refund-guide.md): Learn how to refund a transaction
+- [Reverse](https://developer.globalpayments.com/docs/payments/manage-payments/reverse-guide.md): Learn how to void a transaction
+- [Verify](https://developer.globalpayments.com/docs/payments/manage-payments/verify-guide.md): Learn how to check the validity and balance of a card before a sale
+
+## Risk Management
+3D Secure, Disputes, DCC, Settlement
+
+- [Risk Management](https://developer.globalpayments.com/docs/risk-management/overview.md): Explore ways to reduce fraud for online customers
+- [Overview](https://developer.globalpayments.com/docs/risk-management/3D-secure/overview.md): Mitigate risk via our 3D Secure and Fraud Management capabilities
+- [Browser Authentication](https://developer.globalpayments.com/docs/risk-management/3D-secure/browser-authentication-guide.md): Add 3D Secure authentication to reduce fraud risk
+- [Overview](https://developer.globalpayments.com/docs/risk-management/3D-secure/exemptions/overview.md): Use exemptions to help reduce payment friction
+- [Transaction Risk Analysis](https://developer.globalpayments.com/docs/risk-management/3D-secure/exemptions/transaction-risk-analysis.md): Receive real-time customer exemption eligibilty.
+- [Low-Value Transactions](https://developer.globalpayments.com/docs/risk-management/3D-secure/exemptions/low-value-transactions.md): Avoid authentications for transactions under a certain amount.
+- [Trusted Beneficiary](https://developer.globalpayments.com/docs/risk-management/3D-secure/exemptions/trusted-beneficiary.md): Use a trusted merchant list to avoid unnecessary authentications.
+- [Overview](https://developer.globalpayments.com/docs/risk-management/3D-secure/3DS-more-overview.md): Mitigate risk via our 3D Secure and Fraud Management capabilities
+- [Overview](https://developer.globalpayments.com/docs/risk-management/fraud-management/overview.md): Explore ways to better identify customers and reduce fraud
+- [Fraud Filter](https://developer.globalpayments.com/docs/risk-management/fraud-management/fraud-filter.md): Run filters from customized rules to screen transactions
+- [Address Verification Service](https://developer.globalpayments.com/docs/risk-management/fraud-management/address-verification-service.md): Verify customer addresses to ensure a smooth transaction
+
+## Operations & Reporting
+DCC, Settlement Reporting, Real-Time Reporting
+
+- [Operations & Reporting](https://developer.globalpayments.com/docs/reporting/overview.md): Explore ways to get transaction data
+- [Overview](https://developer.globalpayments.com/docs/operations/disputes-management-overview.md): Automate the reporting and management of transaction disputes
+- [Guide](https://developer.globalpayments.com/docs/operations/disputes-management-guide.md): Learn how to automate the reporting and management of disputes
+- [Overview](https://developer.globalpayments.com/docs/operations/file-processing-overview.md): Process large volumes of transactions in one file
+- [Guide](https://developer.globalpayments.com/docs/operations/file-processing-guide.md): Learn how to process bulk transactions in one file
+- [Guide](https://developer.globalpayments.com/docs/reporting/real-time-reporting-guide.md): Learn how to reconcile transactions and get an audit trail of your account
+- [Overview](https://developer.globalpayments.com/docs/reporting/settlement-reporting-overview.md): Simplify reconciliation and get customized daily deposit data
+- [Guide](https://developer.globalpayments.com/docs/reporting/settlement-reporting-guide.md): Learn how to get a customized list of deposit data
+
+## API References
+Full API Specification with Real Life Examples
+
+- [API References](https://developer.globalpayments.com/api/references-overview.md): Get API definitions, specifications, and interactive code examples
+- [Overview](https://developer.globalpayments.com/api/definitions/overview.md): Get a closer look into how our API works
+- [Access Tokens](https://developer.globalpayments.com/api/definitions/access-tokens.md): Learn how to generate a single-use key to start making API requests
+- [Account Capabilities](https://developer.globalpayments.com/api/definitions/account-capabilities.md): Learn what capabilities you can add to your account with us
+- [Data Formats](https://developer.globalpayments.com/api/definitions/data-formats.md): See what standards and formats our API uses to represent common values
+- [Lists](https://developer.globalpayments.com/api/definitions/lists.md): Learn how to use parameters and values to control multiple query results
+- [Performance](https://developer.globalpayments.com/api/definitions/performance.md): Learn how to optimize the API experience
+- [Requests](https://developer.globalpayments.com/api/definitions/requests.md): Get to know the basics of sending requests to our API
+- [Responses](https://developer.globalpayments.com/api/definitions/responses.md): A guide to all of our API response messages
+- [Resources & Actions](https://developer.globalpayments.com/api/definitions/resources-actions.md): Understand our API resources and their associated actions
+- [Versioning](https://developer.globalpayments.com/api/definitions/versioning.md): Be sure to include the correct version in every API request
+- [Webhooks](https://developer.globalpayments.com/api/definitions/webhooks.md): Learn how to validate a webhook notification message and its sender.
+- [Overview](https://developer.globalpayments.com/api/postman-collection/overview.md): Import our Postman collection for easier integration with our API
+- [Overview](https://developer.globalpayments.com/api/overview.md): Test code interactively and explore the details of our API resources
+- [Access Token](https://developer.globalpayments.com/api/access-token.md): Access Tokens are required to execute all API actions, you can use this resource to obtain one. The authority of the bearer token; the actions it can execute, is determined by the associated Mercha...
+- [Accounts](https://developer.globalpayments.com/api/accounts.md): Accounts represent the payment processing capability a merchant is set up for on the Global Payments API.
+- [Actions](https://developer.globalpayments.com/api/actions.md): Actions represent request and response messages sent to GP API.
+- [Authentications](https://developer.globalpayments.com/api/authentications.md): Authentications represent the attempt to validate the payer and reduce the risk of fraud when transaction is in processing.
+- [Batches](https://developer.globalpayments.com/api/batches.md): A Batch represents a group of transactions that commence the funding process together. Batches have aggregate amount and count totals of all the transactions in the batch. Once a batch is closed al...
+- [Disputes](https://developer.globalpayments.com/api/disputes.md): Disputes are an act, initiated by a Payer or Payer’s bank to query or challenge the previous transfer of funds between that Payer and the Merchant.
+- [Funds](https://developer.globalpayments.com/api/funds.md): Funds represents the capability to move funds between a Global Payments Funds Management Account (FMA) and a business bank account or debit card.
+- [Installments](https://developer.globalpayments.com/api/installments.md): Installments represent the installment payment programs that are available to your customers for a specific transaction. We support installment payment programs in Mexico. These programs allow the ...
+- [Links](https://developer.globalpayments.com/api/links.md): Links allow you create a unique URL to share with your customers.
+- [Merchants](https://developer.globalpayments.com/api/merchants.md): Merchants represent a business entity on the Global Payments system. This is the entity that is selling goods and services and has a direct contractual relationship with Global Payments or with one...
+- [Payers](https://developer.globalpayments.com/api/payers.md): Payers represents entities on the Global Payments system that pay for a Merchants goods and services. Merchants can store data against a Payer and their associated Stored Payment Methods which can ...
+- [Reports](https://developer.globalpayments.com/api/reports.md): Reports are a consolidated or aggregrated view of a merchant's data from the Global Payments platform.
+- [Orders](https://developer.globalpayments.com/api/orders.md): Orders allow an embedded partner to order devices for merchants, check the price of a potential order, and track device shipments.
+- [Transactions](https://developer.globalpayments.com/api/transactions.md): Transactions represent the transfer, or the attempt to transfer funds between the Payer and the Merchant using a specific payment method.
+- [Transfers](https://developer.globalpayments.com/api/transfers.md): Transfers represent the movement of funds from one Global Merchant Account to another.
+- [Verifications](https://developer.globalpayments.com/api/verifications.md): Verifications represent the validation of a payment method to ensure it can be used in the creation of a Transaction.
+
+## Resources
+Get Help With Your Integration
+
+- [Resources](https://developer.globalpayments.com/resources/overview.md): Use our test resources for an easier integration
+- [Test Cards](https://developer.globalpayments.com/resources/test-cards.md): Use our simulated credit cards or banks to try different scenarios
+- [API responses](https://developer.globalpayments.com/resources/responses.md): A guide to all of our API response messages
+- [Country Codes](https://developer.globalpayments.com/resources/codes/country-codes.md): Use ISO country codes in your integration
+- [Currency Codes](https://developer.globalpayments.com/resources/codes/currency-codes.md): Use standard currency codes in your integration

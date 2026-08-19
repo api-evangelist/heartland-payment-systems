@@ -36,7 +36,7 @@ tags:
   - Fortune 1000
 created: '2025'
 modified: '2026-04-28'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
   - aid: heartland-payment-systems:portico-api
     name: Heartland Portico Gateway API

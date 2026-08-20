@@ -28,6 +28,16 @@ tags:
   - Bill Pay
   - Card Present
   - Card Not Present
+  - E-Commerce
+  - Payment Processing
+  - Payments
+  - Payroll
+  - Point-of-Sale
+  - Fortune 1000
+tags_raw:
+  - Bill Pay
+  - Card Present
+  - Card Not Present
   - Ecommerce
   - Payment Processing
   - Payments
@@ -47,6 +57,11 @@ apis:
       prevention.
     humanURL: https://developer.globalpayments.com/heartland/getting-started/overview
     tags:
+      - Card Not Present
+      - E-Commerce
+      - Payments
+      - Tokenization
+    tags_raw:
       - Card Not Present
       - Ecommerce
       - Payments

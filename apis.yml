@@ -93,6 +93,11 @@ apis:
       - Card Present
       - EMV
       - In-Person Payments
+      - Terminal
+    tags_raw:
+      - Card Present
+      - EMV
+      - In-Person Payments
       - Terminals
     properties:
       - type: Documentation
@@ -131,6 +136,10 @@ apis:
       filings, and HR integrations for small to mid-sized businesses.
     humanURL: https://developer.globalpayments.com/heartland/getting-started/overview
     tags:
+      - Human Resources
+      - Payroll
+      - Tax
+    tags_raw:
       - HR
       - Payroll
       - Tax

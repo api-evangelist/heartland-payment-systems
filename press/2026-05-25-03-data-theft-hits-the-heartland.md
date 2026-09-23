@@ -1,7 +1,9 @@
 ---
 title: Data Theft Hits the Heartland
 url: https://redmondmag.com/articles/2009/01/21/data-theft-hits-the-heartland.aspx?admgarea=BDNA
-date: '2026-05-25'
+published: '2009-01-21'
+date_basis: url-derived
+harvested: '2026-05-25'
 query: '"Heartland Payment Systems" press release artificial intelligence'
 position: 3
 source: serpapi-google

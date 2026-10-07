@@ -175,10 +175,8 @@ apis:
 unitEconomics:
   - name: Effective Take Rate
     metric: total_processing_fees / transaction_volume
-    target: per merchant agreement
   - name: Cost per Transaction
     metric: total_processing_fees / card_transactions
-    target: per merchant agreement
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

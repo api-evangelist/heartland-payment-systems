@@ -147,6 +147,12 @@ apis:
       - type: Documentation
         url: https://developer.globalpayments.com/heartland/getting-started/overview
 common:
+  - type: Plans
+    url: plans/heartland-payment-systems-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/heartland-payment-systems-rate-limits.yml
+  - type: FinOps
+    url: finops/heartland-payment-systems-finops.yml
   - url: https://www.heartland.us/resources/blog
     type: Blog
   - type: DomainSecurity

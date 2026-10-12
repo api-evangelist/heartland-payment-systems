@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/heartland-payment-systems/integrations
+- https://n8n.io/integrations/heartland-payment-systems/
+- https://composio.dev/toolkits/heartland-payment-systems
+- https://monid.ai/tools/heartland-payment-systems
+checked:
+- https://composio.dev/toolkits/heartland-payment-systems
+- https://monid.ai/tools/heartland-payment-systems
+- https://n8n.io/integrations/heartland-payment-systems/
+- https://zapier.com/apps/heartland-payment-systems/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

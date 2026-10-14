@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/heartland-payment-systems/integrations
 - https://n8n.io/integrations/heartland-payment-systems/
@@ -10,7 +10,25 @@ checked:
 - https://monid.ai/tools/heartland-payment-systems
 - https://n8n.io/integrations/heartland-payment-systems/
 - https://zapier.com/apps/heartland-payment-systems/integrations
+- olo/integrations/olo-integration-edges.yml
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: Olo (own)
+  partner: olo
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.olo.com/partners/heartland
+  mirror_of: olo/integrations/olo-integration-edges.yml
+  apps:
+  - Heartland
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Gift Cards
 templates: []

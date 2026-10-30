@@ -1,4 +1,4 @@
-# Heartland Payment Systems (heartland-payment-systems)
+# Heartland Payment Systems
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,103 +66,106 @@
 
 Heartland Payment Systems is a payment processing company offering payroll, customer engagement, point-of-sale, and other business solutions to merchants across the United States. Heartland is now a brand of Global Payments, and developer resources for Heartland integrations are published through the Global Payments developer portal. The platform supports online and in-person payments, bill pay, IoT/connected device payments, gift and loyalty, payroll, and PCI-validated point-to-point encryption.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/heartland-payment-systems/refs/heads/main/apis.yml)
+**Areas:** Bill Pay · Card Present · Card Not Present · E-Commerce · Payment Processing · Payments · Payroll · Point-of-Sale · Fortune 1000
 
-## Scope
+## Heartland Payment Systems on APIs.io
 
-- **Type:** Index
-- **Position:** Consuming
-- **Access:** 3rd-Party
+Everything profiled for Heartland Payment Systems is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/heartland-payment-systems/](https://apis.io/providers/heartland-payment-systems/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (5)
 
-- Bill Pay, Card Present, Card Not Present, Ecommerce, Payment Processing, Payments, Payroll, Point of Sale
+- [Heartland Portico Gateway API](https://apis.io/apis/heartland-payment-systems/portico-api/) — The Portico Gateway is Heartland's primary payment processing API for card-not-present and ecommerce transactions, supporting authorization, capture,…
+- [Heartland Card Present API](https://apis.io/apis/heartland-payment-systems/card-present-api/) — Heartland's Card Present APIs support both semi-integrated and fully-integrated EMV solutions for in-person payments, including terminal SDKs, P2PE, and PIN…
+- [Heartland Bill Pay API](https://apis.io/apis/heartland-payment-systems/bill-pay-api/) — The Heartland Bill Pay API enables invoice and bill payment processing for merchants accepting recurring or one-time bill payments from customers across…
+- [Heartland Gift and Loyalty API](https://apis.io/apis/heartland-payment-systems/gift-loyalty-api/) — The Heartland Gift and Loyalty API supports stored value cards, gift card issuance and redemption, and loyalty program integration for merchants.
+- [Heartland Payroll API](https://apis.io/apis/heartland-payment-systems/payroll-api/) — Heartland's Payroll APIs support employee payroll processing, tax filings, and HR integrations for small to mid-sized businesses.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2025
-- **Modified:** 2026-04-28
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (1)
 
-### Heartland Portico Gateway API
-The Portico Gateway is Heartland's primary payment processing API for card-not-present and ecommerce transactions, supporting authorization, capture, refund, void, recurring billing, tokenization, and fraud prevention.
+Authentication, trust centre, and vulnerability disclosure.
 
-**Human URL:** [https://developer.globalpayments.com/heartland/getting-started/overview](https://developer.globalpayments.com/heartland/getting-started/overview)
+- [Heartland Payment Systems Domain Security](https://apis.io/security/heartland-payment-systems/heartland-payment-systems-domain-security/)
 
-#### Tags
+#### Plans and pricing (1)
 
-- Card Not Present, Ecommerce, Payments, Tokenization
+Published plans, tiers and prices.
 
-#### Properties
+- [Heartland Payment Systems Plans Pricing](https://apis.io/plans/heartland-payment-systems/heartland-payment-systems-plans-pricing/)
 
-- [Documentation](https://developer.globalpayments.com/heartland/getting-started/overview)
-- [GettingStarted](https://developer.globalpayments.com/heartland/getting-started/overview)
+#### Rate limits (1)
 
-### Heartland Card Present API
-Heartland's Card Present APIs support both semi-integrated and fully-integrated EMV solutions for in-person payments, including terminal SDKs, P2PE, and PIN debit handling.
+Published request limits.
 
-**Human URL:** [https://developer.globalpayments.com/heartland/getting-started/overview](https://developer.globalpayments.com/heartland/getting-started/overview)
+- [Heartland Payment Systems Rate Limits](https://apis.io/rate-limits/heartland-payment-systems/heartland-payment-systems-rate-limits/)
 
-#### Tags
+#### FinOps (1)
 
-- Card Present, EMV, In-Person Payments, Terminals
+What the API costs to run, by operation.
 
-#### Properties
+- [Heartland Payment Systems Finops](https://apis.io/finops/heartland-payment-systems/heartland-payment-systems-finops/)
 
-- [Documentation](https://developer.globalpayments.com/heartland/getting-started/overview)
+## Where to find this API
 
-### Heartland Bill Pay API
-The Heartland Bill Pay API enables invoice and bill payment processing for merchants accepting recurring or one-time bill payments from customers across multiple channels.
-
-**Human URL:** [https://developer.globalpayments.com/heartland/getting-started/overview](https://developer.globalpayments.com/heartland/getting-started/overview)
-
-#### Tags
-
-- Bill Pay, Invoicing, Recurring Payments
-
-#### Properties
-
-- [Documentation](https://developer.globalpayments.com/heartland/getting-started/overview)
-
-### Heartland Gift and Loyalty API
-The Heartland Gift and Loyalty API supports stored value cards, gift card issuance and redemption, and loyalty program integration for merchants.
-
-**Human URL:** [https://developer.globalpayments.com/heartland/getting-started/overview](https://developer.globalpayments.com/heartland/getting-started/overview)
-
-#### Tags
-
-- Gift Cards, Loyalty, Stored Value
-
-#### Properties
-
-- [Documentation](https://developer.globalpayments.com/heartland/getting-started/overview)
-
-### Heartland Payroll API
-Heartland's Payroll APIs support employee payroll processing, tax filings, and HR integrations for small to mid-sized businesses.
-
-**Human URL:** [https://developer.globalpayments.com/heartland/getting-started/overview](https://developer.globalpayments.com/heartland/getting-started/overview)
-
-#### Tags
-
-- HR, Payroll, Tax
-
-#### Properties
-
-- [Documentation](https://developer.globalpayments.com/heartland/getting-started/overview)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.heartland.us)
-- [ParentCompany](https://www.globalpayments.com)
-- [DeveloperPortal](https://developer.globalpayments.com/heartland/getting-started/overview)
 - [Documentation](https://developer.globalpayments.com/heartland/getting-started/overview)
-- [Testing](https://developer.globalpayments.com/heartland/Certification/Testing)
-- [Support](mailto:onlinepayments@heartland.us)
-- [Contact](mailto:integratormanagement@e-hps.com)
+- [Blog](https://www.heartland.us/resources/blog)
+- [GitHub](https://github.com/hps)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 14.6** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 69.6 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 38.1 |
+| Access clarity | 5.3 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.4** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/heartland-payment-systems/](https://apis.io/providers/heartland-payment-systems/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Heartland Payment Systems: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/heartland-payment-systems/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
